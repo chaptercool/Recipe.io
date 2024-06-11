@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
     <title>Recipe.io - your world of the most incredible and creative recipes</title>
 </head>
 <body>
@@ -10,15 +16,19 @@
     <nav>
         <div class="logo_slogan">
             <a href="" class="logo">Recipe.io</a>
-            <p class="slogan">Your world of the most incredible and creative recipes</p>
+            <p class="slogan">Your world to the most incredible and creative recipes</p>
         </div>
 
-        <form action="" method="get">
+        <div class="nav_right">
+            <form action="" method="get" class="searchbar_container">
             <input type="search" name="searchbar" id="searchbar" placeholder="Look for a recipe">
-            <button type="submit"><img src="" alt="search" class="navico"/></button>
-        </form>
+            <button type="submit" class="navbtn"><img src="/resources/ico/search_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="search" class="navico"/></button>
+            </form>
 
-        <a href="" class="navbutton"><img src="" alt="" class="navico"></a>
+            <button class="navbtn"><img src="/resources/ico/person_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="user" class="navico"/></button>
+        </div>
+        
+
     </nav>
 
     <!-- Related recipes section -->

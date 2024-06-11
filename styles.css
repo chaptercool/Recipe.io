@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #be0808;
+    --secondary-color: #8b0101;
+}
+
+.outfit-font{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+textarea:focus, input:focus{ outline: 0; }
+
+nav{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+    margin-top: 50px;
+    top: 50px;
+}
+
+.logo_slogan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1vw;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    /* font-size: calc(30px + 0.390625vw); */
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.slogan{
+    color: white;
+    font-size: 1rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    padding-left: 1vw;
+}
+
+.nav_right{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+#searchbar{
+    width: 12rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.5rem;
+    /* margin-right: 0.1vw; */
+    font-family: "Outfit", sans-serif;
+    font-weight: 350;
+}
+
+.navbtn{
+    border: 0.1rem solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* align-items: center; */
+    background-color: #fff;
+    margin-left: 0.4vw;
+}
+
+.navico{
+    max-width: 1rem;
+    height: auto;
+}
+
+
