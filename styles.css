@@ -302,6 +302,7 @@ main{
 }
 
 .add_info_text{
+    font-family: "Outfit", sans-serif;
     display: flex;
     align-self: center;
     color: #5F6368;
@@ -327,6 +328,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
 ;   align-items: center;
+margin-top: 1.2rem;
 }
 
 .footer_logo{
@@ -341,5 +343,87 @@ footer{
     font-weight: 400;
     margin-bottom: 1rem;
     color: rgb(192, 192, 192);
+}
+
+/* RECIPE OVERVIEW (maybe some other pages idk) */
+
+.bgimg{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+
+.global_desc{
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: #5F6368;
+}
+
+.rd_sectionname{
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 1rem;
+}
+
+.rd_list{
+    font-family: "Outfit", sans-serif;
+    color: #5F6368;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+.rdl_el{
+    margin: 0.6rem 0 0.6rem 0;
+}
+
+.rd_additionalinfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe{
+    margin-bottom: 1.2rem;
+}
+
+/* CATEGORY FILTER  */
+
+.category_container{
+    height: 30rem;
+    border-radius: 1.8rem;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.105);
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    color: white;
+}
+
+.fcategory_ico{
+    position: absolute;
+    top: 12rem;
+    left: 2rem;
+    font-size: 4rem;
+}
+
+.fcategory_title{
+    position: absolute;
+    top: 18rem;
+    left: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+
+}
+
+.fcategory_desc{
+    position: absolute;
+    top: 23rem;
+    left: 2rem;
+    text-align: left;
+    font-size: 1.3rem;
 }
 

@@ -14,22 +14,28 @@
 <body>
     <nav>
         <div class="logo_slogan">
-            <a href="" class="logo">Recipe.io</a>
-            <p class="slogan">Your world of the most incredible and creative recipes</p>
+            <a href="/main.html" class="logo">Recipe.io</a>
+            <p class="slogan">Your world to the most incredible and creative recipes</p>
         </div>
 
-        <form action="" method="get">
+        <div class="nav_right">
+            <form action="" method="get" class="searchbar_container">
             <input type="search" name="searchbar" id="searchbar" placeholder="Look for a recipe">
-            <button type="submit"><img src="" alt="search" class="navico"/></button>
-        </form>
+            <button type="submit" class="navbtn"><img src="/resources/ico/search_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="search" class="navico"/></button>
+            </form>
 
-        <a href="" class="navbutton"><img src="" alt="user" class="navico"></a>
+            <button class="navbtn"><img src="/resources/ico/person_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="user" class="navico"/></button>
+        </div>
     </nav>
 
     <main>
-        <section class="Recipe">
-            <h1 class="rd_name">Famous Chicken Adobo</h1>
-            <p class="rd_desc">Classic chicken adobo recipe that's simple to make and loved by all who try it. It has been modified to be a bit saucier than traditional adobo and is delicious served over rice.</p>
+    <section class="bg">
+        <img src="/resources/placeholders/test1.webp" alt="" class="bgimg">
+    </section>
+
+        <section class="recipe">
+            <h1 class="global_title">Famous Chicken Adobo</h1>
+            <p class="global_desc">Classic chicken adobo recipe that's simple to make and loved by all who try it. It has been modified to be a bit saucier than traditional adobo and is delicious served over rice.</p>
 
             <h2 class="rd_sectionname">Time</h2>
             <ul class="rd_list">
@@ -62,18 +68,28 @@
                 <li class="rdl_el">Protein: 30g</li>
             </ul>
 
-            <div class="rd_additionalinfo">
-                <p class="rda_tag">Rating: <img src="" alt="star" class="ratingico"><b>4.3</b></p>
-                <p class="rda_tag">Category: <b>Chicken-adobo</b></p>
-                <p class="rda_tag">Cuisine: <b>filipino</b></p>
+            <div class="add_info">
+                <span class="add_info_text"><img src="/resources/ico/hotel_class_48dp_FILL1_wght700_GRAD0_opsz48.svg" alt="star" class="addico">4.5</span>
+                <span class="add_info_separator">
+                    <!-- | -->
+                </span>
+                <span class="add_info_text"><img src="/resources/ico/calendar_clock_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><span id="time_val">2024-01-01 16:00</span></span>
+                <span class="add_info_separator">
+                    <!-- | -->
+                </span>
+                <span class="add_info_text"><img src="/resources/ico/receipt_long_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><a href="" id="category_val">Chicken</a></span>
+                <span class="add_info_separator">
+                    <!-- | -->
+                </span>
+                <span class="add_info_text"><img src="/resources/ico/favorite_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><a href="" id="category_val">Favorite</a></span>
             </div>
         </section>
     </main>
 
     <footer>
         <h1 class="footer_logo">Recipe.io</h1>
-        <a href="" class="footer_link">Home</a>
-        <a href="" class="footer_link">Categories</a>
+        <a href="/main.html" class="footer_link">Home</a>
+        <a href="/main.html#categories" class="footer_link">Categories</a>
         <a href="" class="footer_link">Profile</a>
         <a href="" class="footer_link">About</a>
     </footer>

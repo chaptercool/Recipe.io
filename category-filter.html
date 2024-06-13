@@ -8,11 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <title>Recipe.io - your world of the most incredible and creative recipes</title>
+    
+    <title>Recipes by category</title>
 </head>
 <body>
-    <!-- Navbar (kinda) -->
     <nav>
         <div class="logo_slogan">
             <a href="/main.html" class="logo">Recipe.io</a>
@@ -28,75 +27,16 @@
             <button class="navbtn"><img src="/resources/ico/person_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="user" class="navico"/></button>
         </div>
     </nav>
-    
+
     <main>
-        <!-- Related recipes section -->
-        <section class="related">
-            <div class="related_container">
-                <button class="global_lscroll"><img src="/resources/ico/arrow_back_ios_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="left" class="scrollico"></button>
-                <div class="header_related">
-                    <a href=""><img src="/resources/placeholders/test1.webp" alt="" class="related_img"></a>
-                    <!-- <h1 class="related_title">Welcome!</h1> -->
-                    <div class="related_title">Welcome!</div>
-                    <!-- <p class="related_desc">Testing this creepy microphone.</p> -->
-                    <div class="related_desc">Testing this creepy microphone.</div>
-                </div>
-                <button class="global_rscroll"><img src="/resources/ico/arrow_forward_ios_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="right" class="scrollico"></button>
+        <section class="category_about">
+            <div class="category_container" id="chicken">
+                <div class="fcategory_ico">🍗</div>
+                <div class="fcategory_title">Chicken</div>
+                <div class="fcategory_desc">From crispy fried chicken to savory stir-fries, our collection features mouthwatering dishes that will satisfy any craving. Whether you’re a fan of chicken breasts, thighs, or whole chicken, we’ve got you covered. Explore baked, slow-cooked, and instant pot chicken recipes, casseroles, soups, salads, pastas, and even stuffed chicken. Get ready to elevate your chicken game!</div>
             </div>
         </section>
-
-        <!-- Categories section -->
-        <section class="categories" id="categories">
-            <h1 class="global_title">Categories</h1>
-            <div class="category_list">
-                <div class="category_box" id="seafood">
-                    <a href="">
-                        <div class="category_ico">🐟</div>
-                    </a>
-                    <a href=""><div class="category_title">Seafood</div></a>
-                </div>
-
-                <div class="category_box" id="chicken">
-                    <a href="/category-filter.html">
-                        <div class="category_ico">🍗</div>
-                    </a>
-                    <a href="/category-filter.html"><div class="category_title">Chicken</div></a>
-                </div>
-
-                <div class="category_box" id="beef">
-                    <a href="">
-                        <div class="category_ico">🥩</div>
-                    </a>
-                    <a href=""><div class="category_title">Beef</div></a>
-                </div>
-
-                <div class="category_box" id="appetizers">
-                    <a href="">
-                        <div class="category_ico">🍲</div>
-                    </a>
-                    <a href=""><div class="category_title">Appetizers</div></a>
-                </div>
-
-                <div class="category_box" id="side_dishes">
-                    <a href="">
-                        <div class="category_ico">🧆</div>
-                    </a>
-                    <a href=""><div class="category_title">Side dishes</div></a>
-                </div>
-
-                <div class="category_box" id="salads">
-                    <a href="">
-                        <div class="category_ico">🥗</div>
-                    </a>
-                    <a href=""><div class="category_title">Salads</div></a>
-                </div>
-
-            </div>
-        </section>
-    
-        <!-- Top recipes section -->
         <section class="top_recipes">
-            <h1 class="global_title">Top recipes</h1>
             <div class="recipe_overview">
                 <a href="/recipeoverview.html" class="recipe_title">Famous Chicken Adobo</a>
                 <p class="recipe_desc">Classic chicken adobo recipe that's simple to make and loved by all who try it. It has been modified to be a bit saucier than traditional adobo and is delicious served over rice.</p>
@@ -161,14 +101,12 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer>
-        <h1 class="footer_logo">Recipe.io</h1>
-        <a href="/main.html" class="footer_link">Home</a>
-        <a href="/main.html#categories" class="footer_link">Categories</a>
-        <a href="" class="footer_link">Profile</a>
-        <a href="" class="footer_link">About</a>
-    </footer>
+        <footer>
+            <h1 class="footer_logo">Recipe.io</h1>
+            <a href="/main.html" class="footer_link">Home</a>
+            <a href="/main.html#categories" class="footer_link">Categories</a>
+            <a href="" class="footer_link">Profile</a>
+            <a href="" class="footer_link">About</a>
+        </footer>
 </body>
 </html>
