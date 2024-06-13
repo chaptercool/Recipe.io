@@ -1,6 +1,24 @@
 :root{
     --primary-color: #be0808;
     --secondary-color: #8b0101;
+
+    --seafood-primary-color: #0986bc;
+    --seafood-secondary-color: #074960;
+
+    --chicken-primary-color: #f7b733;
+    --chicken-secondary-color: #ba8002;
+
+    --beef-primary-color: #7101b7;
+    --beef-secondary-color: #3b0263;
+
+    --appetizers-primary-color: #f4c567;
+    --appetizers-secondary-color: #f0af23;
+
+    --side-dishes-primary-color: #bbf630;
+    --side-dishes-secondary-color: #57a801;
+
+    --salads-primary-color: #00d307;
+    --salads-secondary-color: #029518;
 }
 
 .outfit-font{
@@ -22,6 +40,10 @@ html{
 }
 
 textarea:focus, input:focus{ outline: 0; }
+
+a{
+    text-decoration: none;
+}
 
 nav{
     position: fixed;
@@ -101,6 +123,10 @@ main{
     margin-right: 2rem;
 }
 
+/* .related{
+    background-color: #5f5e5e;
+} */
+
 .related_container{
     display: flex;
     flex-direction: row;
@@ -108,10 +134,6 @@ main{
     justify-content: space-between;
     position: relative;
     text-align: center;
-}
-
-.related_recipe{
-    text-decoration: none;
 }
 
 .global_lscroll{
@@ -142,6 +164,7 @@ main{
 
 .related_img{
     max-width: 55rem;
+    height: auto;
     border-radius: 2rem;
     box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.105);
 }
@@ -180,5 +203,143 @@ main{
     font-size: 2.4rem;
     font-family: "Outfit", sans-serif;
     font-weight: 600;
+}
+
+.category_list{
+    display: grid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 2fr));
+}
+
+.category_box{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.105);
+    position: relative;
+    text-align: center;
+}
+
+#seafood{
+    background: linear-gradient(45deg, var(--seafood-primary-color), var(--seafood-secondary-color));
+}
+
+#chicken{
+    background: linear-gradient(45deg, var(--chicken-primary-color), var(--chicken-secondary-color));
+}
+
+#beef{
+    background: linear-gradient(45deg, var(--beef-primary-color), var(--beef-secondary-color));
+}
+
+#appetizers{
+    background: linear-gradient(45deg, var(--appetizers-primary-color), var(--appetizers-secondary-color));
+}
+
+#side_dishes{
+    background: linear-gradient(45deg, var(--side-dishes-primary-color), var(--side-dishes-secondary-color));
+}
+
+#salads{
+    background: linear-gradient(45deg, var(--salads-primary-color), var(--salads-secondary-color));
+}
+
+.category_title{
+    font-size: 2rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    color: white;
+    text-align: left;
+}
+
+.category_ico{
+    font-size: 4rem;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    text-align: left;
+}
+
+.recipe_overview{
+    display: flex;
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+    border-top: 1px solid #959494;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;;
+}
+
+.recipe_title{
+    font-size: 2rem;
+    font-weight: 550;
+    color: black;
+}
+
+.recipe_desc{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #5F6368;
+}
+
+.add_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.addico{
+    max-width: 1.5rem;
+    height: auto;
+    margin-right: 0.3rem;
+}
+
+.add_info_text{
+    display: flex;
+    align-self: center;
+    color: #5F6368;
+}
+
+#category_val{
+    color: #5F6368;
+}
+
+.add_info_separator{
+    background-color: #5F6368;
+    width: 0.1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+footer{
+    background-color: #5f5e5e;
+    color: white;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+;   align-items: center;
+}
+
+.footer_logo{
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.footer_link{
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: rgb(192, 192, 192);
 }
 
