@@ -9,32 +9,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-    <title>Profile</title>
+    <title>My Profile</title>
 </head>
 <body>
     <nav>
         <div class="logo_slogan">
-            <a href="" class="logo">Recipe.io</a>
-            <p class="slogan">Your world of the most incredible and creative recipes</p>
+            <a href="/main.html" class="logo">Recipe.io</a>
+            <p class="slogan">Your world to the most incredible and creative recipes</p>
         </div>
 
-        <form action="" method="get">
+        <div class="nav_right">
+            <form action="" method="get" class="searchbar_container">
             <input type="search" name="searchbar" id="searchbar" placeholder="Look for a recipe">
-            <button type="submit"><img src="" alt="search" class="navico"/></button>
-        </form>
+            <button type="submit" class="navbtn"><img src="/resources/ico/search_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="search" class="navico"/></button>
+            </form>
 
-        <a href="" class="navbutton"><img src="" alt="user" class="navico"></a>
+            <!-- <button class="navbtn"><img src="/resources/ico/person_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="user" class="navico"/></button> -->
+        </div>
     </nav>
 
     <main>
-        
+        <section class="profile">
+            <div class="h1_and_edit">
+                <h1 class="global_title">My Profile</h1>
+                <button id="edit_userdata" onclick="document.location='/edit_profile.html'"><img src="/resources/ico/border_color_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="pencil" class="editico">Edit</button>
+            </div>
+            <div class="emoji_picture">
+                <p id="emoji_itself">😀</p>
+            </div>
+            <p id="userdata">testingthiscreepymicrophone1234</p>
+        </section>
+        <section class="favorites">
+            <h1 class="global_title">Favorite recipes</h1>
+            <div class="recipe_overview">
+                <a href="/recipeoverview.html" class="recipe_title">Famous Chicken Adobo</a>
+                <p class="recipe_desc">Classic chicken adobo recipe that's simple to make and loved by all who try it. It has been modified to be a bit saucier than traditional adobo and is delicious served over rice.</p>
+                <div class="add_info">
+                    <span class="add_info_text"><img src="/resources/ico/hotel_class_48dp_FILL1_wght700_GRAD0_opsz48.svg" alt="star" class="addico">4.5</span>
+                    <span class="add_info_separator">
+                        <!-- | -->
+                    </span>
+                    <span class="add_info_text"><img src="/resources/ico/calendar_clock_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><span id="time_val">2024-01-01 16:00</span></span>
+                    <span class="add_info_separator">
+                        <!-- | -->
+                    </span>
+                    <span class="add_info_text"><img src="/resources/ico/receipt_long_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><a href="" id="category_val">Chicken</a></span>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <h1 class="footer_logo">Recipe.io</h1>
-        <a href="" class="footer_link">Home</a>
-        <a href="" class="footer_link">Categories</a>
-        <a href="" class="footer_link">Profile</a>
+        <a href="/main.html" class="footer_link">Home</a>
+        <a href="/main.html#categories" class="footer_link">Categories</a>
+        <a href="/login.html" class="footer_link">Profile</a>
         <a href="" class="footer_link">About</a>
     </footer>
 </body>

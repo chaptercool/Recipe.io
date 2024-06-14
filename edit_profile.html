@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Edit Profile</title>
+</head>
+<body>
+    <nav>
+        <div class="logo_slogan">
+            <a href="/main.html" class="logo">Recipe.io</a>
+            <p class="slogan">Your world to the most incredible and creative recipes</p>
+        </div>
+
+        <div class="nav_right">
+            <form action="" method="get" class="searchbar_container">
+            <input type="search" name="searchbar" id="searchbar" placeholder="Look for a recipe">
+            <button type="submit" class="navbtn"><img src="/resources/ico/search_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="search" class="navico"/></button>
+            </form>
+
+            <!-- <button class="navbtn"><img src="/resources/ico/person_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="user" class="navico"/></button> -->
+        </div>
+    </nav>
+
+    <main>
+        <section class="edit_profile">
+            <h1 class="global_title">Edit Profile</h1>
+            <form action="" method="post">
+                <p class="annotation">Your emoji</p>
+                <div class="emoji_picture">
+                    <input type="text" placeholder="😀" id="emoji_ico" maxlength="7"/>
+                </div>
+                <p class="notice">Type in your profile emoji in circle</p>
+
+                <p class="annotation">Your username</p>
+                <input type="text" name="username" id="username" placeholder="testingthiscreepymicrophone1234" class="edit_field"/>
+                <p class="notice">Keep in mind that your username should not be identical to other usernames</p>
+
+                <p class="annotation">Your password</p>
+                <input type="password" name="userpassword" id="userpassword" placeholder="•••••••••••••••" class="edit_field"/>
+                <p class="notice">Forgetting your password leads to losing access to your account</p>
+
+                <input type="submit" value="Save" class="save_btn"/>
+                <input type="button" value="Delete account" class="delete_btn"/>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <h1 class="footer_logo">Recipe.io</h1>
+        <a href="/main.html" class="footer_link">Home</a>
+        <a href="/main.html#categories" class="footer_link">Categories</a>
+        <a href="/login.html" class="footer_link">Profile</a>
+        <a href="" class="footer_link">About</a>
+    </footer>
+</body>
+</html>
