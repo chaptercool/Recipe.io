@@ -31,7 +31,7 @@
     <main>
         <section class="logon">
             <h1 class="global_title" id="logon_title">Register in Recipe.io</h1>
-            <form action="" method="post" class="logon_form">
+            <form action="" method="post" class="logon_form" id="register_form">
                 <label for="username" class="logon_label">Your username</label>
                 <input type="text" name="username" id="username" class="logon_input" required placeholder="i.e. myburnedcooker2007">
 
@@ -39,12 +39,17 @@
                 <input type="password" name="password" id="password" class="logon_input" required placeholder="•••••••••••">
 
                 <label for="password" class="logon_label">Repeat password</label>
-                <input type="password" name="password" id="password" class="logon_input" required placeholder="•••••••••••">
+                <input type="password" name="password" id="password_repeat" class="logon_input" required placeholder="•••••••••••">
+
+                <label for="emoji" class="logon_label">Your emoji</label>
+                <input type="text" name="emoji" id="emoji" class="logon_input" required placeholder="🍔" maxlength="7">
 
                 <button type="submit" class="logon_btn">Register</button>
             </form>
             <p class="global_desc" id="global_desc">Already have an account? <a href="/login.html" class="register_link">Log in.</a></p>
         </section>
+
+        <script src="/scripts/register_handler.js"></script>
     </main>
 
     <footer>
