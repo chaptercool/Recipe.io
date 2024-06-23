@@ -14,25 +14,25 @@
 <body>
     <nav>
         <div class="logo_slogan">
-            <a href="" class="logo">Recipe.io</a>
-            <p class="slogan">Your world of the most incredible and creative recipes</p>
+            <a href="/main.html" class="logo">Recipe.io</a>
+            <p class="slogan">Your world to the most incredible and creative recipes</p>
         </div>
 
-        <form action="" method="get">
+        <div class="nav_right">
+            <form action="/searchresults.html" method="get" class="searchbar_container">
             <input type="search" name="searchbar" id="searchbar" placeholder="Look for a recipe">
-            <button type="submit"><img src="" alt="search" class="navico"/></button>
-        </form>
+            <button type="submit" class="navbtn"><img src="/resources/ico/search_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="search" class="navico"/></button>
+            </form>
 
-        <a href="" class="navbutton"><img src="" alt="" class="navico"></a>
+            <button class="navbtn" onclick="document.location='/profile.html'"><img src="/resources/ico/person_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="user" class="navico"/></button>
+        </div>
     </nav>
 
     <main>
         <section class="search_results">
-            <h1 class="global_title">Search results for <span id="keyword"></span></h1>
-            <div class="recipe_overview">
-                <a href="" class="recipe_title">Aaaaaaaa</a>
-                <p class="recipe_desc">Bbbbbbbbb</p>
-                <p class="rating"><img src="" alt="star" class="ratingico">4.5</p>
+            <h1 class="global_title">Search results for <span class="keyword"></span></h1>
+            <div class="query">
+                <script src="/scripts/api_handlers/search_query_handler.js"></script>
             </div>
         </section>
     </main>

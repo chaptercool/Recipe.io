@@ -19,7 +19,7 @@
         </div>
 
         <div class="nav_right">
-            <form action="" method="get" class="searchbar_container">
+            <form action="/searchresults.html" method="get" class="searchbar_container">
             <input type="search" name="searchbar" id="searchbar" placeholder="Look for a recipe">
             <button type="submit" class="navbtn"><img src="/resources/ico/search_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="search" class="navico"/></button>
             </form>
@@ -28,62 +28,12 @@
         </div>
     </nav>
 
-    <main>
-    <section class="bg">
+    <main class="query">
+    <!-- <section class="bg">
         <img src="/resources/placeholders/test1.webp" alt="" class="bgimg">
-    </section>
+    </section> -->
 
-        <section class="recipe">
-            <h1 class="global_title">Famous Chicken Adobo</h1>
-            <p class="global_desc">Classic chicken adobo recipe that's simple to make and loved by all who try it. It has been modified to be a bit saucier than traditional adobo and is delicious served over rice.</p>
-
-            <h2 class="rd_sectionname">Time</h2>
-            <ul class="rd_list">
-                <li class="rdl_el">Prep time: 20mins</li>
-                <li class="rdl_el">Cook time: 45mins</li>
-                <li class="rdl_el">Total time: 1hr 45 mins</li>
-                <li class="rdl_el">Servings: 6</li>
-            </ul>
-
-            <h2 class="rd_sectionname">Ingredients</h2>
-            <ul class="rd_list">
-                <li class="rdl_el">1 cup of sugar</li>
-                <li class="rdl_el">1 cup of flour</li>
-                <li class="rdl_el">1 cup of milk</li>
-                <li class="rdl_el">1 cup of butter</li>
-            </ul>
-
-            <h2 class="rd_sectionname">Directions</h2>
-            <ol class="rd_list">
-                <li class="rdl_el">Heat vegetable oil in a large skillet over medium-high heat. Cook chicken pieces until golden brown, 2 to 3 minutes per side. Transfer chicken to a plate and set aside.</li>
-                <li class="rdl_el">Add onion and garlic to the skillet; cook until softened and brown, about 6 minutes.</li>
-                <li class="rdl_el">Pour in soy sauce and vinegar and season with garlic powder, black pepper, and bay leaf.</li>
-                <li class="rdl_el">Return chicken to pan, increase heat to high, and bring to a boil. Reduce heat to medium-low, cover, and simmer until chicken is tender and cooked through, 35 to 40 minutes.</li>
-            </ol>
-
-            <h2 class="rd_sectionname">Nutritions</h2>
-            <ul class="rd_list">
-                <li class="rdl_el">Fat: 10g</li>
-                <li class="rdl_el">Carbs: 20g</li>
-                <li class="rdl_el">Protein: 30g</li>
-            </ul>
-
-            <div class="add_info">
-                <span class="add_info_text"><img src="/resources/ico/hotel_class_48dp_FILL1_wght700_GRAD0_opsz48.svg" alt="star" class="addico">4.5</span>
-                <span class="add_info_separator">
-                    <!-- | -->
-                </span>
-                <span class="add_info_text"><img src="/resources/ico/calendar_clock_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><span id="time_val">2024-01-01 16:00</span></span>
-                <span class="add_info_separator">
-                    <!-- | -->
-                </span>
-                <span class="add_info_text"><img src="/resources/ico/receipt_long_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><a href="" id="category_val">Chicken</a></span>
-                <span class="add_info_separator">
-                    <!-- | -->
-                </span>
-                <span class="add_info_text"><img src="/resources/ico/favorite_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="addico"><a href="" id="category_val">Favorite</a></span>
-            </div>
-        </section>
+        <script src="/scripts/api_handlers/overview_handler.js"></script>
     </main>
 
     <footer>

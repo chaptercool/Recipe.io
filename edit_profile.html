@@ -19,7 +19,7 @@
         </div>
 
         <div class="nav_right">
-            <form action="" method="get" class="searchbar_container">
+            <form action="/searchresults.html" method="get" class="searchbar_container">
             <input type="search" name="searchbar" id="searchbar" placeholder="Look for a recipe">
             <button type="submit" class="navbtn"><img src="/resources/ico/search_48dp_FILL0_wght700_GRAD0_opsz48.svg" alt="search" class="navico"/></button>
             </form>
@@ -34,7 +34,7 @@
             <form action="" method="post">
                 <p class="annotation">Your emoji</p>
                 <div class="emoji_picture">
-                    <input type="text" placeholder="😀" id="emoji_ico" maxlength="7"/>
+                    <input type="text" placeholder="⦾" id="emoji_ico" maxlength="7"/>
                 </div>
                 <p class="notice">Type in your profile emoji in circle</p>
 
@@ -46,11 +46,12 @@
                 <input type="password" name="userpassword" id="userpassword" placeholder="•••••••••••••••" class="edit_field"/>
                 <p class="notice">Forgetting your password leads to losing access to your account</p>
 
-                <input type="submit" value="Save" class="save_btn"/>
-                <input type="button" value="Delete account" class="delete_btn"/>
+                <input type="submit" value="Save" class="save_btn" id="save"/>
+                <input type="button" value="Discard changes" class="delete_btn" onclick="window.location.href ='profile.html'"/>
             </form>
             
         </section>
+        
     </main>
 
     <footer>
@@ -60,5 +61,6 @@
         <a href="/login.html" class="footer_link">Profile</a>
         <a href="" class="footer_link">About</a>
     </footer>
+    <script src="/scripts/edit_profile_handler.js"></script>
 </body>
 </html>
